@@ -29,13 +29,22 @@ public class CourseServlet extends HttpServlet {
             String[] math = request.getParameterValues("mathCourses");
             String[] other = request.getParameterValues("otherCourses");
 
-            ArrayList<String> remainingFirst= CourseService.remFirst(firstyear);
+            String nsCredit = request.getParameter("NScredit");
+            String ahCredit = request.getParameter("AHcredit");
+            String ssCredit = request.getParameter("SScredit");
+            String spaCredit = request.getParameter("SPAcredit");
+            String baCredit = request.getParameter("BAcredit");
+            String bioElect = request.getParameter("BioElect");
+
+
+            String remainingFirst= CourseService.remFirst(firstyear);
             ArrayList<String> remainingGen= CourseService.remGenEd(genEd);
             ArrayList<String> remainingBio= CourseService.remBiology(bio);
             ArrayList<String> remainingPhy= CourseService.physics(phy);
             ArrayList<String> remainingMath= CourseService.remMath(math);
             ArrayList<String> remainingChem= CourseService.chemistry(chem);
             ArrayList<String> remainingOther= CourseService.remOthers(other);
+
 
 
             session.setAttribute("remFirst", remainingFirst);
@@ -46,7 +55,12 @@ public class CourseServlet extends HttpServlet {
             session.setAttribute("remChem", remainingChem);
             session.setAttribute("remOthers", remainingOther);
 
-
+            session.setAttribute("remNatural", CreditService.remNaturalScience(nsCredit));
+            session.setAttribute("remArts", CreditService.remArts(ahCredit));
+            session.setAttribute("remSocial", CreditService.remSocial(ssCredit));
+            session.setAttribute("remPersonal", CreditService.remPersonal(spaCredit));
+            session.setAttribute("remBac", CreditService.remBacmed(baCredit));
+            session.setAttribute("remBioCredit", CreditService.remBio(bioElect));
 
 
 

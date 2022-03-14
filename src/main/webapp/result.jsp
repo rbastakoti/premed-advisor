@@ -13,9 +13,9 @@
 
 <h1>Remaining Course</h1>
 <br><br>
-
+for
 <p>First Year</p>
-<c:forEach items="${remFirst}" var="first">${first}<br></c:forEach>
+<p>${remFirst}</p>
 
 <p>General Education</p>
 <c:forEach items="${remGen}" var="gen">${gen}<br></c:forEach>
@@ -34,6 +34,26 @@
 
 <p>Other Courses</p>
 <c:forEach items="${remOthers}" var="other">${other}<br></c:forEach>
+
+<br><br>
+
+<p>Natural Science</p>
+<p>${remNatural}</p>
+
+<p>Arts and Humanities</p>
+<p>${remArts}</p>
+
+<p>Social Science</p>
+<p>${remSocial}</p>
+
+<p>Social Personal Awareness</p>
+<p>${remPersonal}</p>
+
+<p>BaccMed</p>
+<p>${remBac}</p>
+
+<p>Biologi Electivs</p>
+<p>${remBioCredit}</p>
 
 </body>
 </html>

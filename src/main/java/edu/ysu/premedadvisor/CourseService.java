@@ -16,16 +16,20 @@ public class CourseService {
     static String[] other = {"BIOL5853", "SOC1500", "SOC3745", "PSYC1560", "PHLT1531", "PHLT3709", "STEM4809"};
 
 
-    public static ArrayList<String> remFirst(String[] courses){
+    public static String remFirst(String[] courses){
+        String fyCourses="";
         ArrayList<String> remFirstYear = new ArrayList<>(Arrays.asList(firstYear)) ;
         for (String course: courses
              ) {
-                if (remFirstYear.contains(course)){
-                    remFirstYear.remove(course);
+                fyCourses = fyCourses + " "+ course;
                 }
-            }
+        if (fyCourses.equals(" ")){
+            return "Please choose one from First Year Courses: YSU1500, SS1500, HONR1500";
+        } else {
+            return "Requirement fulfilled. Taken Course: "+ fyCourses;
+        }
 
-        return remFirstYear;
+
     }
 
     public static ArrayList<String> remGenEd(String[] courses){

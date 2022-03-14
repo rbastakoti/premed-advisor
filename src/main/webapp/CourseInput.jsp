@@ -20,7 +20,7 @@
         </select><br> <br>
         <label for="General Education Requirements">General Education Requirements</label>
         <select name="generalEducation" id="General Education Requirements"  multiple>
-            <option value="ENGl1550">ENGL 1550: Writing 1or ENGL 1549</option>
+            <option value="ENGL1550">ENGL 1550: Writing 1or ENGL 1549</option>
             <option value="ENGL1551">ENGL 1551:	Writing 2 </option>
             <option value="CMST1545">CMST 1545: Communication Foundations</option>
             <option value="MATH1570">Math 1570: Applied Calculus 1 </option>
@@ -78,7 +78,7 @@
         </select><br> <br>
         <label for="Required Support Courses: Others">Required Support Courses: Others</label>
         <select name="otherCourses" id="Required Support Courses: Others" multiple>
-            <option value="BIO5853">BIOL 5853</option>
+            <option value="BIOL5853">BIOL 5853</option>
             <option value="SOC1500">SOC 1500</option>
             <option value="SOC3745">SOC 3745</option>
             <option value="PSYC1560">PSYC 1560</option>
@@ -88,28 +88,30 @@
             <option value="">None</option>
         </select> <br>
 
-<%--            <h2>Please Enter the completed credit hours</h2>--%>
-<%--            <label for="Natural Sciences Credit Hours (0-6)">Natural Sciences Credit Hours</label>--%>
-<%--            <input type="number" id="Natural Sciences Credit Hours" name="Natural Sciences Credit Hours" min = "0" max = "7" placeholder="Enter">--%>
-<%--            <br> <br>--%>
-<%--            <label for="Arts and Humanities Credit Hours (0-6)">Arts and Humanities Credit Hours</label>--%>
-<%--            <input type="number" id="Arts and Humanities Credit Hours" name="Arts and Humanities Credit Hours" min = "0" max = "6" placeholder="Enter">--%>
-<%--            <br> <br>--%>
-<%--            <label for="Social Sciences Credit Hours (0-6)">Social Sciences Credit Hours</label>--%>
-<%--            <input type="number" id="Social Sciences Credit Hours" name="Social Sciences Credit Hours" min = "0" max = "6" placeholder="Enter">--%>
-<%--            <br> <br>--%>
-<%--            <label for="Social and Personal Awareness Credit Hours (0-6)"> Social and Personal Awareness Credit Hours</label>--%>
-<%--            <input type="number" id="Social and Personal Awareness Credit Hours" name="Social and Personal Awareness Credit Hours" min = "0" max = "6" placeholder="Enter">--%>
-<%--            <br> <br>--%>
-<%--            <label for="Biology Electives for BaccMed (≥3700 level)">Biology Electives for BaccMed (≥3700 level)</label>--%>
-<%--            <input type="number" id="Biology Electives for BaccMed (≥3700 level)" name="Biology Electives for BaccMed (≥3700level)" min = "0" max = "16" placeholder="Enter">--%>
-<%--            <br> <br>--%>
-<%--            <label for="Biology Electives for Biological Sciences (3000-5000 level) (3000-5000 level)">Biology Electives for Biological Sciences (3000-5000 level)</label>--%>
-<%--            <input type="number" id="Biology Electives for Biological Sciences (3000-5000 level) " name="Biology Electives for Biological Sciences (3000-5000 level)" min = "0" max = "24" placeholder="Enter">--%>
-<%--            <br> <br>--%>
-            <button  type="submit"  name="button">Submit</button>
-            
+            <h2>Please Enter the completed credit hours</h2>
+            <label for="NScredit">Natural Sciences Credit Hours</label>
+            <input type="number" id="NScredit" name="NScredit" min = "0" max = "7" placeholder="Enter">
+            <br> <br>
+            <label for="AHcredit">Arts and Humanities Credit Hours</label>
+            <input type="number" id="AHcredit" name="AHcredit" min = "0" max = "6" placeholder="Enter">
+            <br> <br>
+            <label for="SScredit">Social Sciences Credit Hours</label>
+            <input type="number" id="SScredit" name="SScredit" min = "0" max = "6" placeholder="Enter">
+            <br> <br>
+            <label for="SPAcredit"> Social and Personal Awareness Credit Hours</label>
+            <input type="number" id="SPAcredit" name="SPAcredit" min = "0" max = "6" placeholder="Enter">
+            <br> <br>
+            <label for="BAcredit">Biology Electives for BaccMed (≥3700 level)</label>
+            <input type="number" id="BAcredit" name="BAcredit" min = "0" max = "16" placeholder="Enter">
+            <br> <br>
+            <label for="BioElect">Biology Electives for Biological Sciences (3000-5000 level)</label>
+            <input type="number" id="BioElect" name="BioElect" min = "0" max = "24" placeholder="Enter">
+            <br> <br>
 
+
+            <button  type="submit"  name="button">Submit</button>
+
+        </fieldset>
               
         </form>
     
